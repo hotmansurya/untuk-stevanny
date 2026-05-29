@@ -223,7 +223,7 @@
         opacity: 1;
       }
       to {
-        transform: translateY(-100px) scale(1.5) rotate(360deg)
+        transform: translateY(-100px) scale(1.5) rotate(360deg);
         opacity: 0;
       }
     }
@@ -374,7 +374,7 @@
 </head>
 <body>
 
-  <audio id="backgroundAudio" src="sempurna.mp3" preload="auto" loop></audio>
+  <audio id="backgroundAudio" src="src/sempurna.mp3" preload="auto" loop></audio>
 
   <div class="stars"></div>
 
@@ -401,7 +401,7 @@
     </div>
 
     <div class="photo-frame">
-      <img src="pani.jpeg" alt="Pani">
+      <img src="img/pani.jpeg">
     </div>
 
     <div class="message">
@@ -531,7 +531,7 @@
 
     function tryPlayAudio() {
       backgroundAudio.play().catch(() => {
-        // Autoplay terblokir browser, musik akan menyala saat layar disentuh/diklik
+        // Autoplay may be blocked; waiting for user interaction.
       });
     }
 
